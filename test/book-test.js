@@ -113,7 +113,7 @@ describe("book.js", function () {
       assert.isFunction(writeBook);
     });
 
-    it.skip("should return a book object", function () {
+    it("should return a book object", function () {
       var bookTitle = createTitle("Teenage Ghoul");
       var bookCharacter = buildMainCharacter("Vassya", 16, "she/her");
       var book = writeBook(bookTitle, bookCharacter, "fantasy");
@@ -124,7 +124,7 @@ describe("book.js", function () {
       assert.equal(book.genre, "fantasy");
     });
 
-    it.skip("should return a different book object", function () {
+    it("should return a different book object", function () {
       var dragonTitle = createTitle("Dragon in the Summer");
       var dragonCharacter = buildMainCharacter("Dana", 25, "they/them");
       var dragonBook = writeBook(dragonTitle, dragonCharacter, "fantasy");
