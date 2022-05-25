@@ -6,8 +6,8 @@ function buildMainCharacter(name, age, pronouns) {
   return {name, age, pronouns};
 }
 
-function saveReview() {
-  
+function saveReview(review, reviews) {
+  reviews.push(review);
 }
 
 module.exports = {
