@@ -7,7 +7,9 @@ function buildMainCharacter(name, age, pronouns) {
 }
 
 function saveReview(review, reviews) {
-  reviews.push(review);
+  if (reviews.indexOf(review) == -1) {
+    reviews.push(review);
+  }
 }
 
 module.exports = {
