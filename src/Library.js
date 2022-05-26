@@ -1,5 +1,5 @@
-function createLibrary() {
-  
+function createLibrary(name) {
+  return {name};
 }
 
 module.exports = {
