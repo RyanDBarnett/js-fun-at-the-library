@@ -18,13 +18,13 @@ describe("library.js", function() {
     assert.equal(denverLibrary.name, "Denver Public Library");
     });
 
-    it.skip("should be able to have a different name", function() {
+    it("should be able to have a different name", function() {
       var goldenLibrary = createLibrary("Golden Public Library");
 
       assert.equal(goldenLibrary.name, "Golden Public Library");
     });
 
-    it.skip("should have shelves", function() {
+    it("should have shelves", function() {
       var denverLibrary = createLibrary("Denver Public Library");
 
       assert.isObject(denverLibrary.shelves);
