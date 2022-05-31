@@ -19,13 +19,13 @@ describe('Librarian (class)', function() {
     assert.equal(librarian.name, "Casey");
   });
 
-  it.skip('should be able to have a different name', function() {
+  it('should be able to have a different name', function() {
     var librarian = new Librarian("Scott");
 
     assert.equal(librarian.name, "Scott");
   });
 
-  it.skip('should work at a library', function() {
+  it('should work at a library', function() {
     var library = createLibrary("Denver Public Library");
     var librarian = new Librarian("Scott", library);
 
