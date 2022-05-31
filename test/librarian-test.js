@@ -33,14 +33,14 @@ describe('Librarian (class)', function() {
     assert.deepEqual(librarian.library, library);
   });
 
-  it.skip('should be able to work at a different library', function() {
+  it('should be able to work at a different library', function() {
     var library = createLibrary("Aurora Public Library");
     var librarian = new Librarian("Casey", library);
 
     assert.deepEqual(librarian.library, library);
   });
 
-  it.skip('should be able to greet a library patron by name', function() {
+  it('should be able to greet a library patron by name', function() {
     var scott = new Librarian("Scott");
 
     assert.equal(scott.greetPatron("Will"), "Hello, Will!");
