@@ -24,6 +24,10 @@ class Librarian {
 
     return foundBook ? `Yes, we have ${title}` : `Sorry, we do not have ${title}`;
   }
+
+  calculateLateFee(daysLate) {
+    return Math.ceil(0.25 * daysLate);
+  }
 }
 
 module.exports = Librarian;
