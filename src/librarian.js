@@ -1,3 +1,7 @@
+var {
+  checkoutBook
+} = require('../src/library.js')
+
 class Librarian {
   constructor(name, library) {
     this.name = name;
@@ -11,7 +15,10 @@ class Librarian {
   findBook(title) {
     var foundBook = Object.keys(this.library.shelves).find((shelf) => {
       return this.library.shelves[shelf].find((book) => {
-        return book.title == title;
+        if (book.title == title) {
+          checkoutBook(this.library, title, book.genre);
+          return true;
+        }
       });
     });
 
