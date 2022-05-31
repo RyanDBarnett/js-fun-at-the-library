@@ -7,6 +7,16 @@ class Librarian {
   greetPatron(patron, isMorning) {
     return isMorning ? `Good morning, ${patron}!` : `Hello, ${patron}!`;
   }
+
+  findBook(title) {
+    var foundBook = Object.keys(this.library.shelves).find((shelf) => {
+      return this.library.shelves[shelf].find((book) => {
+        return book.title == title;
+      });
+    });
+
+    return foundBook ? `Yes, we have ${title}` : 'Nope' ;
+  }
 }
 
 module.exports = Librarian;
