@@ -47,7 +47,7 @@ describe('Librarian (class)', function() {
     assert.equal(scott.greetPatron("Tilly"), "Hello, Tilly!");
   });
 
-  it.skip('should greet a library patron differently if it is morning', function() {
+  it('should greet a library patron differently if it is morning', function() {
     var leta = new Librarian("Leta");
 
     assert.equal(leta.greetPatron("Scott"), "Hello, Scott!");

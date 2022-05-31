@@ -4,8 +4,8 @@ class Librarian {
     this.library = library;
   }
 
-  greetPatron(patron) {
-    return `Hello, ${patron}!`;
+  greetPatron(patron, isMorning) {
+    return isMorning ? `Good morning, ${patron}!` : `Hello, ${patron}!`;
   }
 }
 
