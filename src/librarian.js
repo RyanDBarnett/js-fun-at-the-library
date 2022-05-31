@@ -15,7 +15,7 @@ class Librarian {
       });
     });
 
-    return foundBook ? `Yes, we have ${title}` : 'Nope' ;
+    return foundBook ? `Yes, we have ${title}` : `Sorry, we do not have ${title}`;
   }
 }
 
